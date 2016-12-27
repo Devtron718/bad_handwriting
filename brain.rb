@@ -4,10 +4,17 @@ class Brain
     @synapses = generate_synapses
   end
 
+  # TODO: Make Neurons their own class, and instantiate them on initialize, then
+  #       have the logic related to them in their own class
+
+  # TODO: Make Syapse their own class, and instantiate them on initialize, and give
+  #       them a parent and child neuron to mess with
+
+
+
   # here, we take an array full of inputs, in this case 10 different values.
   # do i need to generate some arrays here?
   # so im thinking maybe i go through and
-
 
   # i would create a new array with some input data, and then enter that into forward again,
   # recursively
@@ -48,8 +55,6 @@ class Brain
 
   # each neuron needs to take the sum of the synapses connected to it,
   # then input that sum into the activation function
-
-
 
   private
 
